@@ -1,0 +1,77 @@
+  .line-through {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .line-through:before, .line-through:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #000;
+    margin: auto;
+  }
+
+  .line-through:before {
+    margin-right: 10px;
+    margin-top: 12px;
+  }
+  
+  .line-through:after {
+    margin-left: 10px;
+    margin-top: 12px;
+  }
+  
+  .login > div > div > h1{
+    font-size: calc(0.8rem + 0.8vw);
+    color: #1C8EDF;
+  }
+
+  .login > div > div > div > div > span{
+    color: black!important;
+  }
+
+  .login{
+      margin-top: 15%!important;
+      justify-content: center;
+      align-items: center;
+   }
+
+  .login > div > div > div > div > button{
+    border: #C5C4C1;
+    background-color: #F5527E;
+    font-family: 'Raleway Bold';
+    color: white;
+  }
+
+  .login button{
+    border: #C5C4C1;
+    background-color: #F5527E;
+    font-family: 'Raleway Bold';
+    color: white;
+  }
+
+  .login > div > div > div > div > button:hover{
+    border: #C5C4C1;
+    background-color: #F5527E;
+    font-family: 'Raleway Bold';
+    color: white;
+    filter: brightness(95%);
+  }
+
+   @media only screen and (min-width: 2500px){
+    .login > div > div > h1{
+        font-size: calc(0.5rem + 0.3vw);
+        color: #1C8EDF;
+    }
+   }
+
+   @media only screen and (max-width: 500px){
+    .main .login{
+      margin-top: 45%!important;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main .login .btn{
+      font-size: calc(0.7rem + 1vw);
+    }
+   }

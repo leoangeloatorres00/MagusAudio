@@ -1,0 +1,212 @@
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden!important; 
+  }
+
+  .main h1{
+    font-family: 'Raleway ExtraBold';
+    font-size: calc(2.5rem + 1vw);
+  }
+
+  .main p{
+    font-family: 'Raleway SemiBold';
+    font-size: calc(1rem + 0.5vw);
+  }
+
+  .main h2{
+    font-family: 'OpenSans Light';
+    font-size: calc(1.5rem + 1vw);
+  }
+
+  .main button{
+    border: #C5C4C1;
+    background-color: #F5527E;
+    font-family: 'Raleway Bold';
+    color: white;
+  }
+
+  .main > section button:hover{
+    border: #C5C4C1;
+    background-color: #F5527E;
+    font-family: 'Raleway Bold';
+    color: white;
+    filter: brightness(95%);
+  }
+
+  .main .line-through {
+    display: flex;
+    flex-direction: row;
+  }
+  .main .line-through:before, .line-through:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #000;
+    margin: auto;
+  }
+  .main .line-through:before {
+    margin-right: 10px;
+    margin-top: 12px;
+  }
+  .main .line-through:after {
+    margin-left: 10px;
+    margin-top: 12px;
+  }
+  
+  .main section:nth-of-type(1) .main-s1 > h1{
+    color: #1C8EDF!important;
+  }
+  
+  .main section:nth-of-type(1) .login div > div > h1{
+    font-size: calc(0.8rem + 0.5vw);
+    color: #1C8EDF!important;
+  }
+
+  .main section:nth-of-type(3) > .container:nth-of-type(1) h2{
+    font-family: 'OpenSans Light';
+    font-size: calc(1.85rem + 1vw);
+    padding-top: 8%;
+  }
+
+  .main section:nth-of-type(3) > .container:nth-of-type(1) span{
+    font-family: 'OpenSans Light';
+    font-size: calc(0.8rem + 0.7vw);
+  }
+
+  .main section:nth-of-type(3) > .container:nth-of-type(2) .s3-col1-title{
+    font-family: 'OpenSans SemiBold';
+    font-size: calc(1rem + 0.1vw);
+  }
+
+  .main section:nth-of-type(3) > .container:nth-of-type(2) .s3-col1-description{
+    font-family: 'OpenSans Regular';
+    font-size: calc(0.8rem + 0.1vw);
+  }
+
+  .main section:nth-of-type(3) > .container:nth-of-type(2) h3{
+    font-family: 'OpenSans SemiBold';
+    font-size: calc(0.8rem + 0.7vw);
+  }
+
+  .main section:nth-of-type(4) blockquote .qoute{
+    font-family: 'OpenSans Light';
+    font-size: calc(0.8rem + 1vw);
+  }
+
+  .main section:nth-of-type(4) blockquote > footer{
+    color: #04c7f2;
+    font-family: 'OpenSans SemiBold';
+    font-size: calc(0.5rem + 0.7vw);
+  }
+
+  @media only screen and (max-width: 600px){
+    .main section:nth-of-type(3) > .container:nth-of-type(2) .s3-col1-title{
+      font-family: 'OpenSans SemiBold';
+      font-size: calc(1rem + 0.8vw);
+    }
+  
+    .main section:nth-of-type(3) > .container:nth-of-type(2) .s3-col1-description{
+      font-family: 'OpenSans Regular';
+      font-size: calc(0.8rem + 1vw);
+    }
+
+    .main section:nth-of-type(3) > .container:nth-of-type(2) h3{
+      font-family: 'OpenSans SemiBold';
+      font-size: calc(1.5rem + 1vw);
+    }
+
+    .main section:nth-of-type(4) blockquote .qoute{
+      font-family: 'OpenSans Light';
+      font-size: calc(0.8rem + 0.4vw);
+    }
+
+    .main button{
+      font-size: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px){
+    .main section:nth-of-type(3) > .container:nth-of-type(2) .s3-col1-title{
+      font-family: 'OpenSans SemiBold';
+      font-size: calc(0.8rem + 0.8vw);
+    }
+  
+    .main section:nth-of-type(3) > .container:nth-of-type(2) .s3-col1-description{
+      font-family: 'OpenSans Regular';
+      font-size: calc(0.8rem + 0.8vw);
+    }
+
+    .main section:nth-of-type(3) > .container:nth-of-type(2) h3{
+      font-family: 'OpenSans SemiBold';
+      font-size: calc(1.2rem + 1vw);
+    }
+
+    .main section:nth-of-type(4) blockquote .qoute{
+      font-family: 'OpenSans Light';
+      font-size: calc(0.8rem + 0.4vw);
+    }
+
+    .main section:nth-of-type(4) img{
+      width: 15px!important;
+      height: 15px!important;
+    }
+
+    .main button{
+      font-size: 0.8rem;
+    }
+
+    .main section:nth-of-type(3) > .container:nth-of-type(1){
+      padding: 0!important;
+    }
+
+    .main section:nth-of-type(3) > .container:nth-of-type(1) h2{
+      font-size: calc(1.2rem + 1vw);
+    }
+
+    .main h1 {
+      font-size: calc(2rem + 1vw);
+    }
+  }
+
+  @media only screen and (min-width: 2500px){
+    .main h1{
+      font-family: 'Raleway ExtraBold';
+      font-size: calc(2rem + 0.6vw);
+    }
+
+    .main p{
+      font-family: 'Raleway SemiBold';
+      font-size: calc(0.8rem + 0.3vw);
+    }
+
+    .main section:nth-of-type(3) > .container:nth-of-type(1) h2{
+      font-family: 'OpenSans Light';
+      font-size: calc(1.85rem + 0.3vw);
+      padding-top: 8%;
+    }
+
+    .main section:nth-of-type(3) > .container:nth-of-type(1) span{
+      font-family: 'OpenSans Light';
+      font-size: calc(0.8rem + 0.3vw);
+    }
+
+    .main section:nth-of-type(3) > .container:nth-of-type(2) h3{
+      font-family: 'OpenSans SemiBold';
+      font-size: calc(0.6rem + 0.5vw);
+    }
+
+    .main section:nth-of-type(4) blockquote .qoute{
+      font-family: 'OpenSans Light';
+      font-size: calc(0.8rem + 0.4vw);
+    }
+
+    .main section:nth-of-type(4) blockquote > footer{
+      font-family: 'OpenSans SemiBold';
+      font-size: calc(0.5rem + 0.4vw);
+    }
+    
+    .main section:nth-of-type(1) .login div > div > h1{
+      font-size: calc(0.6rem + 0.2vw);
+      color: #1C8EDF!important;
+    }
+  }

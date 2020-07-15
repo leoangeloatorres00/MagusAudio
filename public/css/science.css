@@ -1,0 +1,185 @@
+  .science{
+    position: relative;
+  }
+  
+  .science h1{
+    color: #1C8EDF;
+    font-family: 'Raleway ExtraBold';
+    font-size: calc(1.8rem + 0.8vw);
+  }
+
+  .science p{
+    font-family: 'Raleway SemiBold';
+    font-size: calc(1rem + 0.5vw);
+  }
+
+  .science .image > .frequency {
+    height:400px;
+    position:absolute;
+  }
+
+  .science > section:nth-of-type(1) > div:nth-of-type(1){
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .science > section:nth-of-type(1) h1{
+    padding-top: 15%;
+  }
+
+  .science > section:nth-of-type(2) label{
+    color: #1C8EDF;
+    font-family: 'Raleway ExtraBold';
+    font-size: calc(1rem + 0.5vw);
+  }
+
+  .science > section:nth-of-type(2) p{
+    font-family: 'Raleway SemiBold';
+    font-size: calc(1rem + 0.15vw);
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .science > section:nth-of-type(3) label{
+    color: #1C8EDF;
+    font-family: 'Raleway ExtraBold';
+    font-size: calc(1rem + 0.5vw);
+  }
+
+  .science > section:nth-of-type(3) p{
+    font-family: 'Raleway SemiBold';
+    font-size: calc(1rem + 0.15vw);
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .science > section:nth-of-type(3) b{
+    font-family: 'Raleway ExtraBold';
+    font-size: calc(1rem + 0.15vw);
+  }
+
+  .science > section:nth-of-type(4) label{
+    color: #1C8EDF;
+    font-family: 'Raleway ExtraBold';
+    font-size: calc(1rem + 0.1vw);
+  }
+
+  .science > section:nth-of-type(4) p{
+    font-family: 'Raleway SemiBold';
+    font-size: calc(0.8rem + 0.1vw);
+  }
+
+  .science > section:nth-of-type(4) a{
+    text-decoration: underline;
+    font-family: 'OpenSans SemiBoldItalic';
+    font-size: calc(1rem + 0.3vw);
+  }
+
+  .science > section:nth-of-type(5) h2{
+    text-shadow: 3px 3px 8px black!important;
+    font-family: 'Raleway ExtraBold';
+    padding-bottom: 5%;
+  }
+
+  .science > section:nth-of-type(5) h1{
+    text-shadow: 3px 3px 8px black;
+    font-family: 'Raleway ExtraBold';
+    font-size: calc(2.5rem + 1.2vw);
+  }
+
+  .science > section:nth-of-type(5) p{
+    font-family: 'Raleway SemiBold';
+    font-size: calc(1rem + 0.7vw);
+  }
+
+  @media only screen and (max-width: 500px){
+    .science > section:nth-of-type(1) h1 {
+        padding-top: 30%!important;
+    }
+
+    .science > section:nth-of-type(1) > div:nth-of-type(1),
+    .science > section:nth-of-type(2) > div:nth-of-type(2),
+    .science > section:nth-of-type(3) > div:nth-of-type(3){
+      padding-right: 21px;
+      padding-left: 21px;
+    }
+
+    .science > section:nth-of-type(1) p,
+    .science > section:nth-of-type(2) p,
+    .science > section:nth-of-type(3) p,
+    .science > section:nth-of-type(3) b{
+      font-size: calc(0.7rem + 0.15vw)!important;
+    }
+
+    .science > section:nth-of-type(3),
+    .science > section:nth-of-type(4) {
+      padding-right: 30px!important;
+      padding-left: 30px!important;
+    }
+
+    .science > section:nth-of-type(4) > .container{
+      padding: 0!important;
+    }
+
+    .science h1{
+      font-size: calc(1.2rem + 0.8vw)!important;
+    }
+
+    .science > section:nth-of-type(4) a {
+      font-size: calc(0.7rem + 0.3vw);
+    }
+
+    .science > section:nth-of-type(5) h1{
+      font-size: calc(1rem + 0.8vw)!important;
+    }
+    
+    .science > section:nth-of-type(5) p{
+      font-size: calc(0.7rem + 0.3vw);
+    }
+  }
+
+  @media only screen and (max-width: 992px){
+    .science > section:nth-of-type(1) h1{
+        padding-top: 70%;
+    }
+
+    .science > section:nth-of-type(2) p{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .science > section:nth-of-type(3) p{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  @media only screen and (min-width: 2500px){
+    .science h1{
+      font-family: 'Raleway ExtraBold';
+      font-size: calc(0.8rem + 0.8vw);
+    }
+
+    .science p{
+      font-family: 'Raleway SemiBold';
+      font-size: calc(0.6rem + 0.3vw);
+    }
+
+    .science > section:nth-of-type(5) h2{
+      text-shadow: 3px 3px 3px black;
+      font-family: 'Raleway ExtraBold';
+      font-size: calc(0.8rem + 0.8vw);
+      padding-bottom: 5%;
+    }
+
+    .science > section:nth-of-type(5) h1{
+      text-shadow: 3px 3px 3px black;
+      font-family: 'Raleway ExtraBold';
+      font-size: calc(1rem + 1vw);
+    }
+
+    .science > section:nth-of-type(5) p{
+      font-family: 'Raleway SemiBold';
+      font-size: calc(0.5rem + 0.5vw);
+    }
+  }

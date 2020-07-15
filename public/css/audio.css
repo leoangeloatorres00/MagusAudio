@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.home{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin: auto;
+    width: 100%;
+    max-width: 1900px;
+    /* border: 3px solid #73AD21; */
+    /* padding: 10px; */
+}
+
+.title{
+    position:absolute;
+    width:100%;
+    bottom:10px;
+    text-align:center;
+    z-index: 1;
+}
+
+.music-header{
+  background: url("../public/image/main_s2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.progress{
+  margin: 0;
+  padding: 0;
+}
+
+.audioplayer{
+  z-index: 99;
+}
+
+#playlist-container{
+  z-index: 2;
+}

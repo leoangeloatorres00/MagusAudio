@@ -1,0 +1,244 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color:  #414141;
+  overflow-x: hidden;
+}
+
+main{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+  
+.content {
+    margin: auto;
+    width: 100%;
+    max-width: 1900px;
+    overflow-x: hidden;
+    /* border: 3px solid #73AD21; */
+    /* padding: 10px; */
+}
+
+.line-through {
+  display: flex;
+  flex-direction: row;
+}
+
+.line-through:before, .line-through:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #000;
+  margin: auto;
+}
+
+.line-through:before {
+  margin-right: 10px;
+  margin-top: 12px;
+}
+
+.line-through:after {
+  margin-left: 10px;
+  margin-top: 12px;
+}
+
+.main > section:nth-of-type(1){
+  background: url("../public/image/main_s1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+.main > section:nth-of-type(2){
+  background: url("../public/image/main_s2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+.main > section:nth-of-type(3){
+  background: #F0F0F0;
+}
+  
+.science > section:nth-of-type(1){
+  background: url("../public/image/science_s1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+.science > section:nth-of-type(3){
+  padding-left: 50px;
+  padding-right: 50px;
+}
+  
+.science > section:nth-of-type(4){
+  background: #F0F0F0;
+}
+
+.science .image > .frequency {
+  height:400px;
+  position:absolute;
+}
+  
+.science > section:nth-of-type(5){
+  background: url("../public/image/science_s5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+.premium > section:nth-of-type(2){
+  background: linear-gradient(120deg, #03BEED, #0377BF);
+}
+  
+.premium > section:nth-of-type(3) .card{
+  background: linear-gradient(120deg, #03BEED, #0377BF);
+}
+
+.premium .carousel-item{
+  height: 100%;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.premium .carousel-indicators li {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  bottom: 50px;
+}
+
+.premium .carousel-inner .img-fluid {
+  width: 70%!important;
+}
+
+.footer-container{
+  background: #F0F0F0;
+}
+
+.footer-container small{
+  font-family: 'OpenSans Light';
+  font-size: calc(1rem + 0.1vw);
+  color:  #414141;
+}
+
+.nav-link{
+  border-top: 3px transparent solid;
+  padding: 20px 20px;
+  font-family: 'OpenSans Light'!important;
+  font-size: calc(1rem + 0.2vw);
+  color:  #414141;
+}
+
+.nav-link:not(:first-child):hover{
+  color: #04C7F2!important;
+}
+
+.nav-link.active{
+  border-top: 3px #04C7F2 solid;
+  color: #04C7F2!important;
+}
+
+.navbar{
+  margin: auto;
+  padding: 10px;
+  color: #5D5D5D!important;
+}
+
+.navbar-container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar button{
+  border-color: #C5C4C1;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.navbar-collapse > ul:nth-of-type(1) > .nav-item:nth-of-type(1),
+.navbar-collapse > ul:nth-of-type(1) > .nav-item:nth-of-type(2){
+  padding-right: 15px;
+}
+
+@media (max-width: 600px) {
+  .navbar-collapse {
+    width: 65%!important;
+  }
+
+  .nav-link.active{
+    border-top: none;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .nav-link{
+    padding: 6px 20px;
+  }
+
+  .navbar-collapse > ul:nth-of-type(1) > .nav-item:nth-of-type(1),
+  .navbar-collapse > ul:nth-of-type(1) > .nav-item:nth-of-type(2){
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+  }
+
+  .nav-link.active{
+    border-top: none;
+  }
+
+  .navbar button{
+    margin-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .navbar-collapse {
+    top:0; 
+    bottom: 0;
+    position: fixed;
+    left: 100%;
+    width: 40%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #FFFFFF;
+    transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+  }
+
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+
+  .navbar-collapse > ul.mainNavigationButton{
+    bottom: 0; 
+    position:absolute;
+    transform: translateX(-50%);
+    left: 50%; 
+    width:100%;
+    padding-left:1rem;
+    padding-right:1rem;
+  } 
+  
+
+  .footer-container small{
+    font-family: 'OpenSans Light';
+    font-size: calc(0.4rem + 0.1vw)!important;
+    color:  #414141;
+  }
+
+  .footer-container img{
+    height: 12px!important;    
+    width: 25px!important;
+  }
+}
